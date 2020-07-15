@@ -10,10 +10,9 @@ jobs:
     steps:
         - uses: actions/checkout@v2
         - name: Deploy
-          uses: reggionick/s3-deploy@v1
+          uses: lbertenasco/s3-deploy@v1
           with:
             folder: build
             bucket: ${{ secrets.S3_BUCKET }}
             dist-id: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
             invalidation: / *
-            private: true
