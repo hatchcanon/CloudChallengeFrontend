@@ -4,7 +4,7 @@ xhttp.onreadystatechange = function() {
        document.getElementById("count").innerHTML = xhttp.responseText;
     }
 };
-xhttp.open("GET", "https://5qf68f9en2.execute-api.us-east-1.amazonaws.com/prod/hit", true);
+xhttp.open("GET", "https://k6ed13yib4.execute-api.us-east-1.amazonaws.com/prod", true);
 xhttp.send();
 /*!
     * Start Bootstrap - Resume v6.0.1 (https://startbootstrap.com/template-overviews/resume)
